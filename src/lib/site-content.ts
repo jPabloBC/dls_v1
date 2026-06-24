@@ -1,13 +1,13 @@
 export const siteContent = {
   company: {
-    name: "DLS",
-    fullName: "DLS Construccion y Metalurgia",
-    industry: "Construccion, metalurgia, soldadura y estructuras metalicas",
+    name: "MONTAJE DSL",
+    fullName: "MONTAJE DSL",
+    industry: "Montaje industrial, estructuras metalicas, soldadura y mantenimiento",
     description:
-      "Empresa orientada a obras, fabricacion metalica, montaje estructural y soluciones tecnicas para proyectos comerciales e industriales.",
+      "Soluciones integrales con fuerza, precision y confianza para proyectos de estructuras metalicas, montaje industrial, soldadura y mantenimiento.",
   },
   contact: {
-    email: "contacto@dls.cl",
+    email: "contacto@montajedsl.cl",
     phone: "+56 9 0000 0000",
     location: "Chile",
     hours: "Lunes a viernes, 09:00 a 18:00",
@@ -15,25 +15,25 @@ export const siteContent = {
   cta: {
     primary: "Solicitar cotizacion",
     secondary: "Ver servicios",
-    quoteTitle: "Prepara tu requerimiento con informacion clara desde el inicio",
+    quoteTitle: "Convierte tu requerimiento tecnico en una cotizacion clara",
     quoteText:
-      "La plataforma quedara preparada para recibir solicitudes, clasificar oportunidades y dar seguimiento comercial desde el panel privado.",
+      "MONTAJE DSL prepara una base comercial para levantar antecedentes, ordenar prioridades y dar seguimiento a proyectos de montaje, soldadura y mantenimiento.",
   },
   services: [
     {
-      title: "Fabricacion de estructuras metalicas",
+      title: "Estructuras metalicas",
       description:
-        "Desarrollo de estructuras para galpones, soportes, plataformas, marcos y soluciones metalicas a medida.",
+        "Fabricacion y preparacion de estructuras para galpones, plataformas, soportes, marcos y soluciones industriales a medida.",
     },
     {
       title: "Soldadura industrial",
       description:
-        "Trabajos de soldadura para piezas, reparaciones, uniones estructurales y necesidades operativas en taller o terreno.",
+        "Trabajos de soldadura para uniones estructurales, reparaciones, refuerzos y requerimientos operativos en taller o terreno.",
     },
     {
       title: "Montaje estructural",
       description:
-        "Apoyo en instalacion, armado y ajuste de elementos metalicos para obras comerciales e industriales.",
+        "Instalacion, armado y ajuste de elementos metalicos para obras industriales, comerciales y ampliaciones productivas.",
     },
     {
       title: "Mantencion y reparacion",
@@ -43,26 +43,26 @@ export const siteContent = {
     {
       title: "Obras menores y soluciones a medida",
       description:
-        "Ejecucion de trabajos especificos de construccion, adaptaciones y mejoras segun requerimientos del cliente.",
+        "Ejecucion de trabajos especificos de construccion, adaptaciones, refuerzos y mejoras segun requerimientos del cliente.",
     },
     {
       title: "Apoyo tecnico para proyectos",
       description:
-        "Acompanamiento para levantar requerimientos, estimar alcances y preparar informacion para cotizaciones.",
+        "Acompanamiento para levantar requerimientos, ordenar antecedentes, estimar alcances y preparar informacion para cotizar.",
     },
   ],
   benefits: [
-    "Respuesta comercial ordenada para solicitudes de obra y fabricacion.",
-    "Capacidad para combinar construccion, soldadura y montaje en un mismo flujo.",
-    "Base preparada para seguimiento de leads, cotizaciones y mensajes.",
-    "Comunicacion clara para clientes que necesitan evaluar alcance, plazo y prioridad.",
+    "Respuesta comercial ordenada para solicitudes de montaje, fabricacion y mantenimiento.",
+    "Capacidad para integrar estructuras metalicas, soldadura y montaje en un mismo flujo tecnico.",
+    "Base preparada para seguimiento de leads, cotizaciones y mensajes sin perder trazabilidad.",
+    "Comunicacion clara para evaluar alcance, prioridad, condiciones de terreno y plazos.",
   ],
   process: [
     {
       step: "01",
       title: "Levantamiento",
       description:
-        "Se recopilan datos del proyecto, ubicacion, tipo de servicio, urgencia y antecedentes tecnicos disponibles.",
+        "Se recopilan ubicacion, tipo de servicio, urgencia, planos, medidas y antecedentes tecnicos disponibles.",
     },
     {
       step: "02",
@@ -74,33 +74,36 @@ export const siteContent = {
       step: "03",
       title: "Cotizacion",
       description:
-        "Se prepara una propuesta comercial clara, con partidas, condiciones y proximos pasos de coordinacion.",
+        "Se prepara una propuesta comercial clara, con partidas, condiciones, validez y proximos pasos.",
     },
     {
       step: "04",
       title: "Seguimiento",
       description:
-        "El flujo queda listo para registrar mensajes, tareas, estados y oportunidades dentro del panel privado.",
+        "El flujo queda listo para registrar mensajes, tareas, estados y oportunidades de venta.",
     },
   ],
   projects: [
     {
-      title: "Estructura metalica para ampliacion",
+      title: "Estructura metalica para ampliacion industrial",
       category: "Fabricacion y montaje",
       description:
-        "Placeholder para un proyecto de estructura metalica con levantamiento, fabricacion y coordinacion de instalacion.",
+        "Proyecto placeholder para levantamiento, fabricacion y montaje de una ampliacion productiva.",
+      status: "Referencia futura",
     },
     {
       title: "Mantencion de componentes industriales",
       category: "Mantencion y reparacion",
       description:
-        "Placeholder para trabajos de reparacion, refuerzo y soldadura en componentes de uso operativo.",
+        "Proyecto placeholder para reparacion, refuerzo y soldadura en componentes de uso operativo.",
+      status: "Trabajo tecnico",
     },
     {
-      title: "Solucion metalica a medida",
+      title: "Montaje estructural en zona de carga",
       category: "Obras menores",
       description:
-        "Placeholder para una solucion especifica de construccion y metalurgia solicitada por cliente comercial.",
+        "Proyecto placeholder para montaje, ajuste y puesta en servicio de una solucion metalica a medida.",
+      status: "Planificacion",
     },
   ],
 };

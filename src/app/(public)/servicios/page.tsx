@@ -3,14 +3,15 @@ import { ServicesOverview } from "@/components/public/ServicesOverview";
 import { Section } from "@/components/ui/Section";
 
 export const metadata: Metadata = {
-  title: "Servicios",
+  title: "Servicios | MONTAJE DSL",
   description:
-    "Servicios de fabricacion de estructuras metalicas, soldadura industrial, montaje estructural, mantencion, obras menores y apoyo tecnico.",
+    "Servicios de MONTAJE DSL en estructuras metalicas, soldadura industrial, montaje estructural, mantencion, obras menores y apoyo tecnico.",
   keywords: [
-    "fabricacion de estructuras metalicas",
+    "MONTAJE DSL",
+    "estructuras metalicas",
     "soldadura industrial",
     "montaje estructural",
-    "mantencion metalurgica",
+    "mantencion industrial",
     "obras menores",
   ],
 };
@@ -20,15 +21,15 @@ export default function ServicesPage() {
     <>
       <Section>
         <div className="max-w-3xl">
-          <p className="text-sm font-semibold uppercase tracking-wide text-orange-700">
+          <p className="text-sm font-semibold uppercase tracking-wide text-[#C81010]">
             Servicios
           </p>
-          <h1 className="mt-3 text-3xl font-semibold text-zinc-950 sm:text-4xl">
-            Servicios para obras, taller y terreno
+          <h1 className="mt-3 text-3xl font-semibold text-[#4A4F55] sm:text-4xl">
+            Servicios para montaje industrial, taller y terreno
           </h1>
-          <p className="mt-4 text-base leading-7 text-zinc-600 sm:text-lg">
-            Capacidades principales para clientes que necesitan fabricacion metalica,
-            soldadura, montaje, mantencion y apoyo tecnico con enfoque comercial claro.
+          <p className="mt-4 text-base leading-7 text-[#4A4F55] sm:text-lg">
+            Capacidades principales para clientes que necesitan estructuras metalicas,
+            soldadura, montaje, mantencion y apoyo tecnico con respuesta precisa.
           </p>
         </div>
       </Section>

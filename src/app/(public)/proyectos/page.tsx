@@ -4,14 +4,15 @@ import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
 
 export const metadata: Metadata = {
-  title: "Proyectos",
+  title: "Proyectos | MONTAJE DSL",
   description:
-    "Proyectos destacados placeholder para obras, estructuras metalicas, soldadura, mantencion y soluciones metalurgicas a medida.",
+    "Proyectos placeholder de MONTAJE DSL para montaje industrial, estructuras metalicas, soldadura, mantencion y soluciones a medida.",
   keywords: [
-    "proyectos metalicos",
-    "obras industriales",
+    "MONTAJE DSL",
+    "proyectos industriales",
     "estructuras metalicas",
-    "montaje metalico",
+    "montaje industrial",
+    "soldadura industrial",
   ],
 };
 
@@ -21,8 +22,8 @@ export default function ProjectsPage() {
       <Section>
         <PageHeader
           eyebrow="Proyectos"
-          title="Portafolio de obras y estructuras"
-          description="Proyectos placeholder para ordenar futuras referencias comerciales sin usar imagenes reales todavia."
+          title="Referencias de montaje y estructuras"
+          description="Proyectos placeholder para ordenar futuras referencias de montaje industrial, estructuras metalicas, soldadura y mantenimiento."
         />
       </Section>
       <ProjectHighlights showLink={false} />

@@ -3,11 +3,11 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "DLS Construccion y Metalurgia",
-    template: "%s | DLS Construccion y Metalurgia",
+    default: "MONTAJE DSL",
+    template: "%s | MONTAJE DSL",
   },
   description:
-    "Plataforma comercial para servicios de construccion, metalurgia, soldadura y estructuras metalicas.",
+    "Plataforma comercial para montaje industrial, estructuras metalicas, soldadura y mantenimiento.",
 };
 
 export default function RootLayout({

@@ -1,8 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f7f7f5;
-  --foreground: #171717;
+  --color-brand-red: #c81010;
+  --color-brand-red-dark: #9a0d0d;
+  --color-brand-red-light: #e54848;
+  --color-brand-gray-dark: #4a4f55;
+  --color-brand-gray: #8c9197;
+  --color-brand-gray-light: #d6d9dc;
+  --color-brand-bg: #f4f5f7;
+  --background: var(--color-brand-bg);
+  --foreground: var(--color-brand-gray-dark);
 }
 
 @theme inline {
@@ -31,12 +38,17 @@ button:focus-visible,
 input:focus-visible,
 select:focus-visible,
 textarea:focus-visible {
-  outline: 3px solid #f97316;
+  outline: 3px solid var(--color-brand-red);
 }
 
 input,
 select,
 textarea {
   background: #ffffff;
-  color: #18181b;
+  color: var(--color-brand-gray-dark);
+}
+
+::selection {
+  background: var(--color-brand-red);
+  color: #ffffff;
 }

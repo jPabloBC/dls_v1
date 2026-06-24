@@ -4,14 +4,15 @@ import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
 
 export const metadata: Metadata = {
-  title: "Cotizar",
+  title: "Cotizar | MONTAJE DSL",
   description:
-    "Maqueta de solicitud de cotizacion para proyectos de construccion, metalurgia, soldadura y estructuras metalicas.",
+    "Maqueta de solicitud de cotizacion para proyectos de MONTAJE DSL en montaje industrial, soldadura, mantenimiento y estructuras metalicas.",
   keywords: [
+    "MONTAJE DSL",
     "cotizar estructuras metalicas",
     "cotizacion soldadura",
-    "cotizacion construccion",
-    "proyecto metalurgico",
+    "cotizacion montaje industrial",
+    "mantenimiento industrial",
   ],
 };
 
@@ -21,7 +22,7 @@ export default function QuotePage() {
       <PageHeader
         eyebrow="Cotizar"
         title="Solicitud de cotizacion"
-        description="Maqueta visual para capturar datos de proyectos de construccion, metalurgia, soldadura y estructuras metalicas. La integracion de envio queda pendiente."
+        description="Maqueta visual para capturar datos de proyectos de montaje industrial, estructuras metalicas, soldadura y mantenimiento. La integracion de envio queda pendiente."
       />
       <QuoteFormMock />
     </Section>
