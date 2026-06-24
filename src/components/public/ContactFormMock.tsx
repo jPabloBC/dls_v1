@@ -1,37 +1,53 @@
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+
 export function ContactFormMock() {
   return (
-    <form className="rounded-lg border border-[#D6D9DC] bg-white p-5 shadow-sm sm:p-6">
-      <div
-        id="contact-form-status"
-        className="rounded-md border border-[#E54848] bg-[#F4F5F7] px-4 py-3 text-sm leading-6 text-[#4A4F55]"
-      >
-        Formulario visual pendiente de integracion con backend.
-      </div>
-      <div className="mt-6 grid gap-5">
+    <Card className="rounded-sm border-[#D6D9DC] bg-white shadow-none">
+      <CardHeader className="border-b border-[#D6D9DC] bg-[#F4F5F7]">
+        <Badge className="w-fit rounded-sm bg-[#C81010] text-white hover:bg-[#9A0D0D]">
+          DSL-CONTACT-CHANNEL
+        </Badge>
+        <CardTitle className="text-xl font-semibold text-[#4A4F55]">
+          Canal comercial tecnico
+        </CardTitle>
+      </CardHeader>
+      <CardContent>
+        <form>
+          <div
+            id="contact-form-status"
+            className="border border-[#E54848] bg-[#F4F5F7] px-4 py-3 text-sm leading-6 text-[#4A4F55]"
+          >
+            Formulario visual pendiente de integracion con backend.
+          </div>
+          <div className="mt-6 grid gap-5">
         <label htmlFor="contact-name" className="text-sm font-medium text-[#4A4F55]">
           Nombre
-          <input
+          <Input
             id="contact-name"
             name="name"
-            className="mt-2 w-full rounded-md border border-[#D6D9DC] px-3 py-2"
+            className="mt-2 h-10 rounded-sm border-[#D6D9DC]"
             aria-describedby="contact-form-status"
           />
         </label>
         <label htmlFor="contact-email" className="text-sm font-medium text-[#4A4F55]">
           Email
-          <input
+          <Input
             id="contact-email"
             name="email"
             type="email"
-            className="mt-2 w-full rounded-md border border-[#D6D9DC] px-3 py-2"
+            className="mt-2 h-10 rounded-sm border-[#D6D9DC]"
           />
         </label>
         <label htmlFor="contact-phone" className="text-sm font-medium text-[#4A4F55]">
           Telefono
-          <input
+          <Input
             id="contact-phone"
             name="phone"
-            className="mt-2 w-full rounded-md border border-[#D6D9DC] px-3 py-2"
+            className="mt-2 h-10 rounded-sm border-[#D6D9DC]"
           />
         </label>
         <label htmlFor="contact-channel" className="text-sm font-medium text-[#4A4F55]">
@@ -39,7 +55,7 @@ export function ContactFormMock() {
           <select
             id="contact-channel"
             name="preferredChannel"
-            className="mt-2 w-full rounded-md border border-[#D6D9DC] px-3 py-2"
+            className="mt-2 h-10 w-full rounded-sm border border-[#D6D9DC] bg-white px-3 py-2 text-sm text-[#4A4F55]"
           >
             <option>Email</option>
             <option>Telefono</option>
@@ -48,20 +64,22 @@ export function ContactFormMock() {
         </label>
         <label htmlFor="contact-message" className="text-sm font-medium text-[#4A4F55]">
           Mensaje
-          <textarea
+          <Textarea
             id="contact-message"
             name="message"
-            className="mt-2 min-h-36 w-full rounded-md border border-[#D6D9DC] px-3 py-2"
+            className="mt-2 min-h-36 rounded-sm border-[#D6D9DC]"
           />
         </label>
-      </div>
-      <button
-        type="button"
-        aria-disabled="true"
-        className="mt-6 w-full rounded-md bg-[#C81010] px-5 py-3 text-sm font-semibold text-white hover:bg-[#9A0D0D] sm:w-auto"
-      >
-        Envio pendiente de integracion
-      </button>
-    </form>
+          </div>
+          <Button
+            type="button"
+            aria-disabled="true"
+            className="mt-6 h-10 w-full rounded-sm bg-[#C81010] text-sm font-semibold text-white hover:bg-[#9A0D0D] sm:w-auto"
+          >
+            Envio pendiente de integracion
+          </Button>
+        </form>
+      </CardContent>
+    </Card>
   );
 }

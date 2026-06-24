@@ -1,55 +1,77 @@
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Separator } from "@/components/ui/separator";
+import { Textarea } from "@/components/ui/textarea";
 import { siteContent } from "@/lib/site-content";
 
 export function QuoteFormMock() {
   return (
-    <form className="rounded-lg border border-[#D6D9DC] bg-white p-5 shadow-sm sm:p-6">
-      <div
-        id="quote-form-status"
-        className="rounded-md border border-[#E54848] bg-[#F4F5F7] px-4 py-3 text-sm leading-6 text-[#4A4F55]"
-      >
-        Formulario visual pendiente de integracion con backend.
-      </div>
-      <div className="mt-6 grid gap-5 sm:grid-cols-2">
+    <Card className="rounded-sm border-[#D6D9DC] bg-white shadow-none">
+      <CardHeader className="border-b border-[#D6D9DC] bg-[#F4F5F7]">
+        <Badge className="w-fit rounded-sm bg-[#C81010] text-white hover:bg-[#9A0D0D]">
+          DSL-QUOTE-REQUEST
+        </Badge>
+        <CardTitle className="text-xl font-semibold text-[#4A4F55]">
+          Solicitud tecnica de cotizacion
+        </CardTitle>
+      </CardHeader>
+      <CardContent>
+        <form>
+          <div
+            id="quote-form-status"
+            className="border border-[#E54848] bg-[#F4F5F7] px-4 py-3 text-sm leading-6 text-[#4A4F55]"
+          >
+            Formulario visual pendiente de integracion con backend.
+          </div>
+          <div className="mt-6 grid gap-5 sm:grid-cols-2">
         <label htmlFor="quote-name" className="text-sm font-medium text-[#4A4F55]">
           Nombre
-          <input
+          <Input
             id="quote-name"
             name="name"
-            className="mt-2 w-full rounded-md border border-[#D6D9DC] px-3 py-2"
+            className="mt-2 h-10 rounded-sm border-[#D6D9DC]"
             aria-describedby="quote-form-status"
           />
         </label>
         <label htmlFor="quote-company" className="text-sm font-medium text-[#4A4F55]">
           Empresa
-          <input
+          <Input
             id="quote-company"
             name="company"
-            className="mt-2 w-full rounded-md border border-[#D6D9DC] px-3 py-2"
+            className="mt-2 h-10 rounded-sm border-[#D6D9DC]"
           />
         </label>
         <label htmlFor="quote-phone" className="text-sm font-medium text-[#4A4F55]">
           Telefono
-          <input
+          <Input
             id="quote-phone"
             name="phone"
-            className="mt-2 w-full rounded-md border border-[#D6D9DC] px-3 py-2"
+            className="mt-2 h-10 rounded-sm border-[#D6D9DC]"
           />
         </label>
         <label htmlFor="quote-email" className="text-sm font-medium text-[#4A4F55]">
           Email
-          <input
+          <Input
             id="quote-email"
             name="email"
             type="email"
-            className="mt-2 w-full rounded-md border border-[#D6D9DC] px-3 py-2"
+            className="mt-2 h-10 rounded-sm border-[#D6D9DC]"
           />
         </label>
+        <div className="sm:col-span-2">
+          <Separator className="bg-[#D6D9DC]" />
+          <p className="mt-5 text-xs font-semibold uppercase tracking-wide text-[#8C9197]">
+            Datos del proyecto
+          </p>
+        </div>
         <label htmlFor="quote-service" className="text-sm font-medium text-[#4A4F55]">
           Tipo de servicio
           <select
             id="quote-service"
             name="serviceType"
-            className="mt-2 w-full rounded-md border border-[#D6D9DC] px-3 py-2"
+            className="mt-2 h-10 w-full rounded-sm border border-[#D6D9DC] bg-white px-3 py-2 text-sm text-[#4A4F55]"
           >
             {siteContent.services.map((service) => (
               <option key={service.title}>{service.title}</option>
@@ -58,10 +80,10 @@ export function QuoteFormMock() {
         </label>
         <label htmlFor="quote-location" className="text-sm font-medium text-[#4A4F55]">
           Ubicacion del proyecto
-          <input
+          <Input
             id="quote-location"
             name="projectLocation"
-            className="mt-2 w-full rounded-md border border-[#D6D9DC] px-3 py-2"
+            className="mt-2 h-10 rounded-sm border-[#D6D9DC]"
           />
         </label>
         <label htmlFor="quote-urgency" className="text-sm font-medium text-[#4A4F55]">
@@ -69,7 +91,7 @@ export function QuoteFormMock() {
           <select
             id="quote-urgency"
             name="urgency"
-            className="mt-2 w-full rounded-md border border-[#D6D9DC] px-3 py-2"
+            className="mt-2 h-10 w-full rounded-sm border border-[#D6D9DC] bg-white px-3 py-2 text-sm text-[#4A4F55]"
           >
             <option>Por evaluar</option>
             <option>Esta semana</option>
@@ -82,27 +104,29 @@ export function QuoteFormMock() {
           <div
             role="group"
             aria-labelledby="quote-files-label"
-            className="mt-2 rounded-md border border-dashed border-[#D6D9DC] px-3 py-6 text-center text-sm text-[#8C9197]"
+            className="mt-2 border border-dashed border-[#D6D9DC] bg-[#F4F5F7] px-3 py-6 text-center text-sm text-[#8C9197]"
           >
             Carga de archivos pendiente
           </div>
         </div>
         <label htmlFor="quote-description" className="text-sm font-medium text-[#4A4F55] sm:col-span-2">
           Descripcion del requerimiento
-          <textarea
+          <Textarea
             id="quote-description"
             name="description"
-            className="mt-2 min-h-36 w-full rounded-md border border-[#D6D9DC] px-3 py-2"
+            className="mt-2 min-h-36 rounded-sm border-[#D6D9DC]"
           />
         </label>
-      </div>
-      <button
-        type="button"
-        aria-disabled="true"
-        className="mt-6 w-full rounded-md bg-[#C81010] px-5 py-3 text-sm font-semibold text-white hover:bg-[#9A0D0D] sm:w-auto"
-      >
-        Envio pendiente de integracion
-      </button>
-    </form>
+          </div>
+          <Button
+            type="button"
+            aria-disabled="true"
+            className="mt-6 h-10 w-full rounded-sm bg-[#C81010] text-sm font-semibold text-white hover:bg-[#9A0D0D] sm:w-auto"
+          >
+            Envio pendiente de integracion
+          </Button>
+        </form>
+      </CardContent>
+    </Card>
   );
 }

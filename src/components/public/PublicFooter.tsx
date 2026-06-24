@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BrandLogo } from "@/components/public/BrandLogo";
+import { Separator } from "@/components/ui/separator";
 import { publicNavigation } from "@/lib/navigation";
 import { siteContent } from "@/lib/site-content";
 
@@ -14,6 +15,10 @@ export function PublicFooter() {
           </div>
           <p className="mt-4 max-w-xl text-sm leading-6 text-[#F4F5F7]">
             {siteContent.company.description}
+          </p>
+          <Separator className="my-5 bg-[#8C9197]" />
+          <p className="text-xs font-semibold uppercase tracking-wide text-[#D6D9DC]">
+            DSL-FOOTER-STRUCTURE
           </p>
         </div>
         <div>

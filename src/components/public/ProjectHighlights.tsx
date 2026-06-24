@@ -1,4 +1,7 @@
 import Link from "next/link";
+import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
 import { siteContent } from "@/lib/site-content";
 
 type ProjectHighlightsProps = {
@@ -25,20 +28,37 @@ export function ProjectHighlights({ showLink = true }: ProjectHighlightsProps) {
       </div>
       <div className="mt-8 grid gap-4 md:grid-cols-3">
         {siteContent.projects.map((project) => (
-          <article key={project.title} className="flex h-full flex-col rounded-lg border border-[#D6D9DC] bg-white p-6 shadow-sm">
-            <div className="mb-5 flex h-32 items-end rounded-md border border-[#D6D9DC] bg-[#F4F5F7] p-4">
-              <span className="rounded bg-[#C81010] px-3 py-1 text-xs font-semibold text-white">
-                {project.category}
-              </span>
-            </div>
-            <div className="mb-3 flex flex-wrap gap-2">
-              <span className="rounded-md border border-[#D6D9DC] px-3 py-1 text-xs font-semibold text-[#4A4F55]">
-                {project.status}
-              </span>
-            </div>
-            <h3 className="text-lg font-semibold text-[#4A4F55]">{project.title}</h3>
-            <p className="mt-3 text-sm leading-6 text-[#4A4F55]">{project.description}</p>
-          </article>
+          <Card key={project.title} className="rounded-sm border-[#D6D9DC] bg-white shadow-none">
+            <CardHeader className="border-b border-[#D6D9DC] bg-[#F4F5F7]">
+              <div className="flex items-start justify-between gap-4">
+                <Badge className="rounded-sm bg-[#C81010] text-white hover:bg-[#9A0D0D]">
+                  {project.code}
+                </Badge>
+                <span className="text-xs font-semibold uppercase tracking-wide text-[#8C9197]">
+                  {project.status}
+                </span>
+              </div>
+              <CardTitle className="text-lg font-semibold text-[#4A4F55]">{project.title}</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-sm leading-6 text-[#4A4F55]">{project.description}</p>
+              <Separator className="my-4 bg-[#D6D9DC]" />
+              <dl className="grid gap-3 text-sm">
+                <div>
+                  <dt className="font-semibold text-[#8C9197]">Tipo</dt>
+                  <dd className="text-[#4A4F55]">{project.category}</dd>
+                </div>
+                <div>
+                  <dt className="font-semibold text-[#8C9197]">Alcance</dt>
+                  <dd className="text-[#4A4F55]">{project.scope}</dd>
+                </div>
+                <div>
+                  <dt className="font-semibold text-[#8C9197]">Material / especialidad</dt>
+                  <dd className="text-[#4A4F55]">{project.material}</dd>
+                </div>
+              </dl>
+            </CardContent>
+          </Card>
         ))}
       </div>
     </section>

@@ -1,16 +1,30 @@
 import Link from "next/link";
 import { BrandLogo } from "@/components/public/BrandLogo";
+import { Badge } from "@/components/ui/badge";
+import { Separator } from "@/components/ui/separator";
 import { siteContent } from "@/lib/site-content";
+
+const technicalPanel = [
+  "Montaje industrial",
+  "Soldadura especializada",
+  "Estructuras metalicas",
+  "Mantenimiento",
+];
 
 export function HeroSection() {
   return (
-    <section className="border-b border-[#D6D9DC] bg-[#F4F5F7]">
-      <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-14 sm:px-6 sm:py-16 lg:grid-cols-[1.15fr_0.85fr] lg:px-8 lg:py-20">
-        <div>
-          <p className="text-sm font-semibold uppercase tracking-wide text-[#C81010]">
+    <section className="relative overflow-hidden border-b border-[#D6D9DC] bg-[#F4F5F7]">
+      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(74,79,85,0.08)_1px,transparent_1px),linear-gradient(0deg,rgba(74,79,85,0.08)_1px,transparent_1px)] bg-[size:48px_48px]" />
+      <div className="absolute right-0 top-0 h-28 w-2/5 bg-[#C81010] [clip-path:polygon(18%_0,100%_0,100%_100%,0_100%)]" />
+      <div className="relative mx-auto grid w-full max-w-6xl gap-10 px-4 py-14 sm:px-6 sm:py-16 lg:grid-cols-[1.08fr_0.92fr] lg:px-8 lg:py-20">
+        <div className="max-w-4xl">
+          <Badge className="rounded-sm bg-white px-3 py-1 text-[#C81010] ring-1 ring-[#D6D9DC] hover:bg-white">
+            DSL-INDUSTRIAL-SYSTEM
+          </Badge>
+          <p className="mt-5 text-sm font-semibold uppercase tracking-wide text-[#C81010]">
             {siteContent.company.industry}
           </p>
-          <h1 className="mt-5 max-w-4xl text-4xl font-semibold leading-tight tracking-normal text-[#4A4F55] sm:text-5xl lg:text-6xl">
+          <h1 className="mt-4 max-w-4xl text-4xl font-semibold leading-tight tracking-normal text-[#4A4F55] sm:text-5xl lg:text-6xl">
             Estructuras que construyen el futuro
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-8 text-[#4A4F55] sm:text-lg">
@@ -19,46 +33,53 @@ export function HeroSection() {
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link
               href="/cotizar"
-              className="rounded-md bg-[#C81010] px-5 py-3 text-center text-sm font-semibold text-white hover:bg-[#9A0D0D]"
+              className="rounded-sm bg-[#C81010] px-5 py-3 text-center text-sm font-semibold text-white hover:bg-[#9A0D0D]"
             >
               {siteContent.cta.primary}
             </Link>
             <Link
               href="/servicios"
-              className="rounded-md border border-[#C81010] px-5 py-3 text-center text-sm font-semibold text-[#C81010] hover:bg-white"
+              className="rounded-sm border border-[#C81010] bg-white/80 px-5 py-3 text-center text-sm font-semibold text-[#C81010] hover:bg-white"
             >
               {siteContent.cta.secondary}
             </Link>
           </div>
+          <div className="mt-10 grid max-w-2xl grid-cols-2 gap-3 text-xs font-semibold uppercase tracking-wide text-[#8C9197] sm:grid-cols-4">
+            {["Fuerza", "Precision", "Confianza", "Tecnica"].map((item) => (
+              <div key={item} className="border-l-2 border-[#C81010] bg-white/70 px-3 py-2">
+                {item}
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="rounded-lg border border-[#D6D9DC] bg-white p-6 shadow-sm">
-          <div className="flex items-center gap-4">
+        <aside className="border border-[#D6D9DC] bg-white p-5 shadow-sm">
+          <div className="flex items-center gap-5">
             <BrandLogo variant="hero" />
             <div>
               <p className="text-sm font-semibold uppercase tracking-wide text-[#C81010]">
-                Fuerza, precision y confianza
+                Panel tecnico
               </p>
               <p className="mt-2 text-lg font-semibold text-[#4A4F55]">
-                Montaje industrial con foco tecnico y respuesta comercial.
+                MONTAJE DSL
               </p>
             </div>
           </div>
-          <p className="mt-6 text-sm font-semibold uppercase tracking-wide text-[#8C9197]">
-            Especialidades
-          </p>
-          <dl className="mt-6 grid gap-5">
-            {[
-              ["Montaje", "Estructuras y soluciones industriales"],
-              ["Soldadura", "Reparacion, refuerzo y fabricacion"],
-              ["Mantenimiento", "Continuidad operativa y soporte"],
-            ].map(([label, value]) => (
-              <div key={label} className="border-l-4 border-[#C81010] pl-4">
-                <dt className="text-sm text-[#8C9197]">{label}</dt>
-                <dd className="mt-1 text-lg font-semibold text-[#4A4F55]">{value}</dd>
+          <Separator className="my-6 bg-[#D6D9DC]" />
+          <div className="grid gap-3">
+            {technicalPanel.map((item, index) => (
+              <div key={item} className="grid grid-cols-[auto_1fr] items-center gap-4 border border-[#D6D9DC] bg-[#F4F5F7] p-3">
+                <span className="text-sm font-semibold text-[#C81010]">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <span className="text-sm font-semibold text-[#4A4F55]">{item}</span>
               </div>
             ))}
-          </dl>
-        </div>
+          </div>
+          <div className="mt-6 bg-[#4A4F55] p-4 text-white [clip-path:polygon(0_0,100%_0,94%_100%,0_100%)]">
+            <p className="text-xs font-semibold uppercase tracking-wide">DSL-MOUNT-READY</p>
+            <p className="mt-2 text-sm">Levantamiento, cotizacion y seguimiento tecnico.</p>
+          </div>
+        </aside>
       </div>
     </section>
   );

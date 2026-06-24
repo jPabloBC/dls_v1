@@ -7,6 +7,9 @@ export function PublicCta() {
       <div className="rounded-lg bg-[#C81010] p-8 text-white sm:p-10">
         <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
           <div>
+            <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-white/80">
+              DSL-COMMERCIAL-NODE
+            </p>
             <h2 className="text-2xl font-semibold sm:text-3xl">{siteContent.cta.quoteTitle}</h2>
             <p className="mt-4 max-w-2xl text-sm leading-6 text-white">
               {siteContent.cta.quoteText}
@@ -14,7 +17,7 @@ export function PublicCta() {
           </div>
           <Link
             href="/cotizar"
-            className="rounded-md bg-white px-5 py-3 text-center text-sm font-semibold text-[#C81010] hover:bg-[#F4F5F7]"
+            className="rounded-sm bg-white px-5 py-3 text-center text-sm font-semibold text-[#C81010] hover:bg-[#F4F5F7]"
           >
             {siteContent.cta.primary}
           </Link>
