@@ -7,7 +7,7 @@ export function PublicCta() {
       <div className="rounded-lg bg-zinc-950 p-8 text-white sm:p-10">
         <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
           <div>
-            <h2 className="text-3xl font-semibold">{siteContent.cta.quoteTitle}</h2>
+            <h2 className="text-2xl font-semibold sm:text-3xl">{siteContent.cta.quoteTitle}</h2>
             <p className="mt-4 max-w-2xl text-sm leading-6 text-zinc-300">
               {siteContent.cta.quoteText}
             </p>

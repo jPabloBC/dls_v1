@@ -13,7 +13,7 @@ export function ProjectHighlights({ showLink = true }: ProjectHighlightsProps) {
           <p className="text-sm font-semibold uppercase tracking-wide text-orange-700">
             Proyectos destacados
           </p>
-          <h2 className="mt-3 text-3xl font-semibold text-zinc-950">
+          <h2 className="mt-3 text-2xl font-semibold text-zinc-950 sm:text-3xl">
             Referencias preparadas para casos reales
           </h2>
         </div>
@@ -25,7 +25,7 @@ export function ProjectHighlights({ showLink = true }: ProjectHighlightsProps) {
       </div>
       <div className="mt-8 grid gap-4 md:grid-cols-3">
         {siteContent.projects.map((project) => (
-          <article key={project.title} className="rounded-lg border border-zinc-200 bg-white p-6 shadow-sm">
+          <article key={project.title} className="flex h-full flex-col rounded-lg border border-zinc-200 bg-white p-6 shadow-sm">
             <div className="mb-5 flex h-32 items-end rounded-md bg-[linear-gradient(135deg,#27272a,#52525b)] p-4">
               <span className="rounded bg-white/90 px-3 py-1 text-xs font-semibold text-zinc-950">
                 {project.category}

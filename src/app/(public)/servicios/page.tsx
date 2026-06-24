@@ -1,5 +1,19 @@
+import type { Metadata } from "next";
 import { ServicesOverview } from "@/components/public/ServicesOverview";
 import { Section } from "@/components/ui/Section";
+
+export const metadata: Metadata = {
+  title: "Servicios",
+  description:
+    "Servicios de fabricacion de estructuras metalicas, soldadura industrial, montaje estructural, mantencion, obras menores y apoyo tecnico.",
+  keywords: [
+    "fabricacion de estructuras metalicas",
+    "soldadura industrial",
+    "montaje estructural",
+    "mantencion metalurgica",
+    "obras menores",
+  ],
+};
 
 export default function ServicesPage() {
   return (

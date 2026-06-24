@@ -18,6 +18,22 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+a,
+button,
+input,
+select,
+textarea {
+  outline-offset: 3px;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #f97316;
+}
+
 input,
 select,
 textarea {

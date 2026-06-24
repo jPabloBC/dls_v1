@@ -1,9 +1,23 @@
+import type { Metadata } from "next";
 import { CommercialProcess } from "@/components/public/CommercialProcess";
 import { HeroSection } from "@/components/public/HeroSection";
 import { ProjectHighlights } from "@/components/public/ProjectHighlights";
 import { PublicCta } from "@/components/public/PublicCta";
 import { ServicesOverview } from "@/components/public/ServicesOverview";
 import { siteContent } from "@/lib/site-content";
+
+export const metadata: Metadata = {
+  title: "Construccion, metalurgia y soldadura",
+  description:
+    "DLS presenta servicios de construccion, fabricacion metalica, soldadura industrial, montaje estructural y cotizacion de proyectos.",
+  keywords: [
+    "construccion",
+    "metalurgia",
+    "soldadura",
+    "estructuras metalicas",
+    "cotizacion de proyectos",
+  ],
+};
 
 export default function HomePage() {
   return (

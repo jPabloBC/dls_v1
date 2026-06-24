@@ -1,6 +1,19 @@
+import type { Metadata } from "next";
 import { QuoteFormMock } from "@/components/public/QuoteFormMock";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
+
+export const metadata: Metadata = {
+  title: "Cotizar",
+  description:
+    "Maqueta de solicitud de cotizacion para proyectos de construccion, metalurgia, soldadura y estructuras metalicas.",
+  keywords: [
+    "cotizar estructuras metalicas",
+    "cotizacion soldadura",
+    "cotizacion construccion",
+    "proyecto metalurgico",
+  ],
+};
 
 export default function QuotePage() {
   return (

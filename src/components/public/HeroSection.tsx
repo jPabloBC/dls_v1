@@ -4,12 +4,12 @@ import { siteContent } from "@/lib/site-content";
 export function HeroSection() {
   return (
     <section className="border-b border-zinc-200 bg-zinc-950 text-white">
-      <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1.15fr_0.85fr] lg:px-8 lg:py-20">
+      <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-14 sm:px-6 sm:py-16 lg:grid-cols-[1.15fr_0.85fr] lg:px-8 lg:py-20">
         <div>
           <p className="text-sm font-semibold uppercase tracking-wide text-orange-300">
             {siteContent.company.industry}
           </p>
-          <h1 className="mt-5 max-w-4xl text-4xl font-semibold tracking-normal sm:text-5xl lg:text-6xl">
+          <h1 className="mt-5 max-w-4xl text-4xl font-semibold leading-tight tracking-normal sm:text-5xl lg:text-6xl">
             Soluciones tecnicas para obras, soldadura y estructuras metalicas
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-8 text-zinc-300 sm:text-lg">

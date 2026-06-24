@@ -1,7 +1,20 @@
+import type { Metadata } from "next";
 import { ContactFormMock } from "@/components/public/ContactFormMock";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Section } from "@/components/ui/Section";
 import { siteContent } from "@/lib/site-content";
+
+export const metadata: Metadata = {
+  title: "Contacto",
+  description:
+    "Contacto comercial para consultas sobre construccion, metalurgia, soldadura, montaje y estructuras metalicas.",
+  keywords: [
+    "contacto construccion",
+    "contacto soldadura",
+    "empresa metalurgica",
+    "estructuras metalicas",
+  ],
+};
 
 export default function ContactPage() {
   return (

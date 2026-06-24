@@ -15,7 +15,7 @@ export function ServicesOverview({ showAll = false }: ServicesOverviewProps) {
           <p className="text-sm font-semibold uppercase tracking-wide text-orange-700">
             Servicios principales
           </p>
-          <h2 className="mt-3 text-3xl font-semibold text-zinc-950">
+          <h2 className="mt-3 text-2xl font-semibold text-zinc-950 sm:text-3xl">
             Capacidades para resolver en taller y terreno
           </h2>
         </div>
@@ -27,7 +27,7 @@ export function ServicesOverview({ showAll = false }: ServicesOverviewProps) {
       </div>
       <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {services.map((service) => (
-          <article key={service.title} className="rounded-lg border border-zinc-200 bg-white p-6 shadow-sm">
+          <article key={service.title} className="flex h-full flex-col rounded-lg border border-zinc-200 bg-white p-6 shadow-sm">
             <h3 className="text-lg font-semibold text-zinc-950">{service.title}</h3>
             <p className="mt-3 text-sm leading-6 text-zinc-600">{service.description}</p>
           </article>
