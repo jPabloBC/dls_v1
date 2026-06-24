@@ -8,9 +8,9 @@ type BrandLogoProps = {
 
 const sizeByVariant: Record<BrandLogoVariant, { className: string; width: number; height: number }> = {
   header: {
-    className: "h-12 w-12",
-    width: 48,
-    height: 48,
+    className: "h-14 w-14",
+    width: 56,
+    height: 56,
   },
   footer: {
     className: "h-14 w-14",

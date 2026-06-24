@@ -9,16 +9,16 @@ import { Card, CardContent } from "@/components/ui/card";
 import { siteContent } from "@/lib/site-content";
 
 export const metadata: Metadata = {
-  title: "MONTAJE DSL | Montaje industrial y estructuras metalicas",
+  title: "MONTAJE DSL | Montaje industrial y estructuras metálicas",
   description:
-    "MONTAJE DSL entrega soluciones integrales en estructuras metalicas, montaje industrial, soldadura y mantenimiento.",
+    "MONTAJE DSL entrega soluciones integrales en estructuras metálicas, montaje industrial, soldadura y mantenimiento.",
   keywords: [
     "MONTAJE DSL",
     "montaje industrial",
     "soldadura",
-    "estructuras metalicas",
+    "estructuras metálicas",
     "mantenimiento industrial",
-    "cotizacion de proyectos",
+    "cotización de proyectos",
   ],
 };
 
@@ -33,7 +33,7 @@ export default function HomePage() {
             Criterios de trabajo
           </p>
           <h2 className="mt-3 text-2xl font-semibold text-[#4A4F55] sm:text-3xl">
-            Una operacion comercial pensada para proyectos tecnicos
+            Una operación comercial pensada para proyectos técnicos
           </h2>
         </div>
         <div className="grid gap-4 md:grid-cols-2">

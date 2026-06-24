@@ -12,7 +12,7 @@ export function ContactFormMock() {
           DSL-CONTACT-CHANNEL
         </Badge>
         <CardTitle className="text-xl font-semibold text-[#4A4F55]">
-          Canal comercial tecnico
+          Canal comercial técnico
         </CardTitle>
       </CardHeader>
       <CardContent>
@@ -21,62 +21,62 @@ export function ContactFormMock() {
             id="contact-form-status"
             className="border border-[#E54848] bg-[#F4F5F7] px-4 py-3 text-sm leading-6 text-[#4A4F55]"
           >
-            Formulario visual pendiente de integracion con backend.
+            Formulario visual pendiente de integración con backend.
           </div>
           <div className="mt-6 grid gap-5">
-        <label htmlFor="contact-name" className="text-sm font-medium text-[#4A4F55]">
-          Nombre
-          <Input
-            id="contact-name"
-            name="name"
-            className="mt-2 h-10 rounded-sm border-[#D6D9DC]"
-            aria-describedby="contact-form-status"
-          />
-        </label>
-        <label htmlFor="contact-email" className="text-sm font-medium text-[#4A4F55]">
-          Email
-          <Input
-            id="contact-email"
-            name="email"
-            type="email"
-            className="mt-2 h-10 rounded-sm border-[#D6D9DC]"
-          />
-        </label>
-        <label htmlFor="contact-phone" className="text-sm font-medium text-[#4A4F55]">
-          Telefono
-          <Input
-            id="contact-phone"
-            name="phone"
-            className="mt-2 h-10 rounded-sm border-[#D6D9DC]"
-          />
-        </label>
-        <label htmlFor="contact-channel" className="text-sm font-medium text-[#4A4F55]">
-          Canal preferido
-          <select
-            id="contact-channel"
-            name="preferredChannel"
-            className="mt-2 h-10 w-full rounded-sm border border-[#D6D9DC] bg-white px-3 py-2 text-sm text-[#4A4F55]"
-          >
-            <option>Email</option>
-            <option>Telefono</option>
-            <option>WhatsApp futuro</option>
-          </select>
-        </label>
-        <label htmlFor="contact-message" className="text-sm font-medium text-[#4A4F55]">
-          Mensaje
-          <Textarea
-            id="contact-message"
-            name="message"
-            className="mt-2 min-h-36 rounded-sm border-[#D6D9DC]"
-          />
-        </label>
+            <label htmlFor="contact-name" className="text-sm font-medium text-[#4A4F55]">
+              Nombre
+              <Input
+                id="contact-name"
+                name="name"
+                className="mt-2 h-10 rounded-sm border-[#D6D9DC]"
+                aria-describedby="contact-form-status"
+              />
+            </label>
+            <label htmlFor="contact-email" className="text-sm font-medium text-[#4A4F55]">
+              Email
+              <Input
+                id="contact-email"
+                name="email"
+                type="email"
+                className="mt-2 h-10 rounded-sm border-[#D6D9DC]"
+              />
+            </label>
+            <label htmlFor="contact-phone" className="text-sm font-medium text-[#4A4F55]">
+              Teléfono
+              <Input
+                id="contact-phone"
+                name="phone"
+                className="mt-2 h-10 rounded-sm border-[#D6D9DC]"
+              />
+            </label>
+            <label htmlFor="contact-channel" className="text-sm font-medium text-[#4A4F55]">
+              Canal preferido
+              <select
+                id="contact-channel"
+                name="preferredChannel"
+                className="mt-2 h-10 w-full rounded-sm border border-[#D6D9DC] bg-white px-3 py-2 text-sm text-[#4A4F55]"
+              >
+                <option>Email</option>
+                <option>Teléfono</option>
+                <option>WhatsApp futuro</option>
+              </select>
+            </label>
+            <label htmlFor="contact-message" className="text-sm font-medium text-[#4A4F55]">
+              Mensaje
+              <Textarea
+                id="contact-message"
+                name="message"
+                className="mt-2 min-h-36 rounded-sm border-[#D6D9DC]"
+              />
+            </label>
           </div>
           <Button
             type="button"
             aria-disabled="true"
             className="mt-6 h-10 w-full rounded-sm bg-[#C81010] text-sm font-semibold text-white hover:bg-[#9A0D0D] sm:w-auto"
           >
-            Envio pendiente de integracion
+            Envío pendiente de integración
           </Button>
         </form>
       </CardContent>

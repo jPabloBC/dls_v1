@@ -10,7 +10,7 @@ export function CommercialProcess() {
             Proceso comercial
           </p>
           <h2 className="mt-3 text-3xl font-semibold text-[#4A4F55]">
-            De la solicitud tecnica al seguimiento comercial
+            De la solicitud técnica al seguimiento comercial
           </h2>
           <p className="mt-4 text-base leading-7 text-[#4A4F55]">
             Un flujo pensado para ordenar antecedentes, evaluar condiciones de terreno,

@@ -9,13 +9,13 @@ import { siteContent } from "@/lib/site-content";
 export const metadata: Metadata = {
   title: "Contacto | MONTAJE DSL",
   description:
-    "Contacto comercial de MONTAJE DSL para consultas sobre montaje industrial, estructuras metalicas, soldadura y mantenimiento.",
+    "Contacto comercial de MONTAJE DSL para consultas sobre montaje industrial, estructuras metálicas, soldadura y mantenimiento.",
   keywords: [
     "MONTAJE DSL",
     "contacto montaje industrial",
     "contacto soldadura",
     "mantenimiento industrial",
-    "estructuras metalicas",
+    "estructuras metálicas",
   ],
 };
 
@@ -26,7 +26,7 @@ export default function ContactPage() {
         <PageHeader
           eyebrow="Contacto"
           title="Conversemos sobre tu proyecto"
-          description="Maqueta inicial para consultas comerciales de montaje industrial, soldadura, estructuras metalicas y mantenimiento."
+          description="Maqueta inicial para consultas comerciales de montaje industrial, soldadura, estructuras metálicas y mantenimiento."
         />
         <div className="mt-8 border border-[#D6D9DC] bg-white p-6 text-sm leading-6 text-[#4A4F55]">
           <Badge className="rounded-sm bg-[#C81010] text-white hover:bg-[#9A0D0D]">
@@ -40,7 +40,7 @@ export default function ContactPage() {
           <p className="text-xs font-semibold uppercase tracking-wide text-[#8C9197]">
             Canales preparados
           </p>
-          <p className="mt-2">Formulario, telefono, email y futura integracion WhatsApp.</p>
+          <p className="mt-2">Formulario, teléfono, email y futura integración WhatsApp.</p>
         </div>
       </div>
       <ContactFormMock />

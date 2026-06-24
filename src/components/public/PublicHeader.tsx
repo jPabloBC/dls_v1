@@ -6,13 +6,13 @@ import { siteContent } from "@/lib/site-content";
 export function PublicHeader() {
   return (
     <header className="sticky top-0 z-20 border-b border-[#D6D9DC] bg-white/95 backdrop-blur">
-      <div className="mx-auto flex w-full max-w-6xl flex-col gap-4 px-4 py-4 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+      <div className="mx-auto flex w-full max-w-6xl flex-col gap-4 px-4 py-3 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
         <Link href="/" className="flex min-w-0 items-center gap-3 text-[#4A4F55]">
           <BrandLogo variant="header" />
           <span className="min-w-0">
             <span className="block text-base font-semibold leading-5">{siteContent.company.fullName}</span>
             <span className="block text-xs font-medium text-[#8C9197]">
-              Montaje, soldadura y mantenimiento
+              Montaje, soldadura y estructuras
             </span>
           </span>
         </Link>
@@ -30,7 +30,7 @@ export function PublicHeader() {
           </nav>
           <Link
             href="/cotizar"
-            className="w-full rounded-md bg-[#C81010] px-4 py-2 text-center text-sm font-semibold text-white hover:bg-[#9A0D0D] sm:w-auto"
+            className="w-full rounded-sm bg-[#C81010] px-4 py-2 text-center text-sm font-semibold text-white hover:bg-[#9A0D0D] sm:w-auto"
           >
             Cotizar proyecto
           </Link>

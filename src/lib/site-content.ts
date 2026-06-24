@@ -2,9 +2,9 @@ export const siteContent = {
   company: {
     name: "MONTAJE DSL",
     fullName: "MONTAJE DSL",
-    industry: "Montaje industrial, estructuras metalicas, soldadura y mantenimiento",
+    industry: "Montaje industrial, estructuras metálicas, soldadura y mantenimiento",
     description:
-      "Soluciones integrales con fuerza, precision y confianza para proyectos de estructuras metalicas, montaje industrial, soldadura y mantenimiento.",
+      "Soluciones integrales con fuerza, precisión y confianza para proyectos de estructuras metálicas, montaje industrial, soldadura y mantenimiento.",
   },
   contact: {
     email: "contacto@montajedsl.cl",
@@ -13,18 +13,18 @@ export const siteContent = {
     hours: "Lunes a viernes, 09:00 a 18:00",
   },
   cta: {
-    primary: "Solicitar cotizacion",
+    primary: "Solicitar cotización",
     secondary: "Ver servicios",
-    quoteTitle: "Convierte tu requerimiento tecnico en una cotizacion clara",
+    quoteTitle: "Convierte tu requerimiento técnico en una cotización clara",
     quoteText:
       "MONTAJE DSL prepara una base comercial para levantar antecedentes, ordenar prioridades y dar seguimiento a proyectos de montaje, soldadura y mantenimiento.",
   },
   services: [
     {
       code: "DSL-STRUCT-01",
-      title: "Estructuras metalicas",
+      title: "Estructuras metálicas",
       description:
-        "Fabricacion y preparacion de estructuras para galpones, plataformas, soportes, marcos y soluciones industriales a medida.",
+        "Fabricación y preparación de estructuras para galpones, plataformas, soportes, marcos y soluciones industriales a medida.",
       applications: ["Galpones", "Plataformas", "Soportes", "Ampliaciones"],
     },
     {
@@ -32,61 +32,61 @@ export const siteContent = {
       title: "Soldadura industrial",
       description:
         "Trabajos de soldadura para uniones estructurales, reparaciones, refuerzos y requerimientos operativos en taller o terreno.",
-      applications: ["Uniones", "Refuerzos", "Reparaciones", "Piezas criticas"],
+      applications: ["Uniones", "Refuerzos", "Reparaciones", "Piezas críticas"],
     },
     {
       code: "DSL-MOUNT-03",
       title: "Montaje estructural",
       description:
-        "Instalacion, armado y ajuste de elementos metalicos para obras industriales, comerciales y ampliaciones productivas.",
-      applications: ["Armado", "Ajuste", "Instalacion", "Terreno"],
+        "Instalación, armado y ajuste de elementos metálicos para obras industriales, comerciales y ampliaciones productivas.",
+      applications: ["Armado", "Ajuste", "Instalación", "Terreno"],
     },
     {
       code: "DSL-MAINT-04",
-      title: "Mantencion y reparacion",
+      title: "Mantención y reparación",
       description:
-        "Intervenciones correctivas y preventivas para estructuras, componentes metalicos y puntos criticos de operacion.",
+        "Intervenciones correctivas y preventivas para estructuras, componentes metálicos y puntos críticos de operación.",
       applications: ["Correctivo", "Preventivo", "Refuerzo", "Continuidad"],
     },
     {
       code: "DSL-WORK-05",
       title: "Obras menores y soluciones a medida",
       description:
-        "Ejecucion de trabajos especificos de construccion, adaptaciones, refuerzos y mejoras segun requerimientos del cliente.",
-      applications: ["Adaptaciones", "Mejoras", "Construccion", "Refuerzos"],
+        "Ejecución de trabajos específicos de construcción, adaptaciones, refuerzos y mejoras según requerimientos del cliente.",
+      applications: ["Adaptaciones", "Mejoras", "Construcción", "Refuerzos"],
     },
     {
       code: "DSL-TECH-06",
-      title: "Apoyo tecnico para proyectos",
+      title: "Apoyo técnico para proyectos",
       description:
-        "Acompanamiento para levantar requerimientos, ordenar antecedentes, estimar alcances y preparar informacion para cotizar.",
-      applications: ["Levantamiento", "Alcance", "Estimacion", "Revision"],
+        "Acompañamiento para levantar requerimientos, ordenar antecedentes, estimar alcances y preparar información para cotizar.",
+      applications: ["Levantamiento", "Alcance", "Estimación", "Revisión"],
     },
   ],
   benefits: [
-    "Respuesta comercial ordenada para solicitudes de montaje, fabricacion y mantenimiento.",
-    "Capacidad para integrar estructuras metalicas, soldadura y montaje en un mismo flujo tecnico.",
+    "Respuesta comercial ordenada para solicitudes de montaje, fabricación y mantenimiento.",
+    "Capacidad para integrar estructuras metálicas, soldadura y montaje en un mismo flujo técnico.",
     "Base preparada para seguimiento de leads, cotizaciones y mensajes sin perder trazabilidad.",
-    "Comunicacion clara para evaluar alcance, prioridad, condiciones de terreno y plazos.",
+    "Comunicación clara para evaluar alcance, prioridad, condiciones de terreno y plazos.",
   ],
   process: [
     {
       step: "01",
       title: "Levantamiento",
       description:
-        "Se recopilan ubicacion, tipo de servicio, urgencia, planos, medidas y antecedentes tecnicos disponibles.",
+        "Se recopilan ubicación, tipo de servicio, urgencia, planos, medidas y antecedentes técnicos disponibles.",
     },
     {
       step: "02",
-      title: "Evaluacion tecnica",
+      title: "Evaluación técnica",
       description:
         "Se revisa el alcance para separar materiales, mano de obra, montaje, riesgos y condiciones de terreno.",
     },
     {
       step: "03",
-      title: "Cotizacion",
+      title: "Cotización",
       description:
-        "Se prepara una propuesta comercial clara, con partidas, condiciones, validez y proximos pasos.",
+        "Se prepara una propuesta comercial clara, con partidas, condiciones, validez y próximos pasos.",
     },
     {
       step: "04",
@@ -98,31 +98,31 @@ export const siteContent = {
   projects: [
     {
       code: "DSL-PROJ-118",
-      title: "Estructura metalica para ampliacion industrial",
-      category: "Fabricacion y montaje",
+      title: "Estructura metálica para ampliación industrial",
+      category: "Fabricación y montaje",
       description:
-        "Proyecto placeholder para levantamiento, fabricacion y montaje de una ampliacion productiva.",
+        "Proyecto placeholder para levantamiento, fabricación y montaje de una ampliación productiva.",
       status: "Referencia futura",
-      scope: "Levantamiento, fabricacion y montaje",
+      scope: "Levantamiento, fabricación y montaje",
       material: "Acero estructural",
     },
     {
       code: "DSL-PROJ-204",
-      title: "Mantencion de componentes industriales",
-      category: "Mantencion y reparacion",
+      title: "Mantención de componentes industriales",
+      category: "Mantención y reparación",
       description:
-        "Proyecto placeholder para reparacion, refuerzo y soldadura en componentes de uso operativo.",
-      status: "Trabajo tecnico",
-      scope: "Diagnostico, refuerzo y terminacion",
-      material: "Componentes metalicos",
+        "Proyecto placeholder para reparación, refuerzo y soldadura en componentes de uso operativo.",
+      status: "Trabajo técnico",
+      scope: "Diagnóstico, refuerzo y terminación",
+      material: "Componentes metálicos",
     },
     {
       code: "DSL-PROJ-316",
       title: "Montaje estructural en zona de carga",
       category: "Obras menores",
       description:
-        "Proyecto placeholder para montaje, ajuste y puesta en servicio de una solucion metalica a medida.",
-      status: "Planificacion",
+        "Proyecto placeholder para montaje, ajuste y puesta en servicio de una solución metálica a medida.",
+      status: "Planificación",
       scope: "Montaje, ajuste y puesta en servicio",
       material: "Perfiles y placas",
     },

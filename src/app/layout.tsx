@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     template: "%s | MONTAJE DSL",
   },
   description:
-    "Plataforma comercial para montaje industrial, estructuras metalicas, soldadura y mantenimiento.",
+    "Plataforma comercial para montaje industrial, estructuras metálicas, soldadura y mantenimiento.",
 };
 
 export default function RootLayout({
