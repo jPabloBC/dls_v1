@@ -7,7 +7,7 @@ type PublicShellProps = {
 
 export function PublicShell({ children }: PublicShellProps) {
   return (
-    <div className="flex min-h-screen flex-col bg-zinc-50">
+    <div className="flex min-h-screen flex-col bg-zinc-50 text-zinc-950">
       <PublicHeader />
       <main className="flex-1">{children}</main>
       <PublicFooter />

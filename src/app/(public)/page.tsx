@@ -1,59 +1,30 @@
-import Link from "next/link";
-import { PageHeader } from "@/components/ui/PageHeader";
-import { Section } from "@/components/ui/Section";
-
-const highlights = [
-  "Construccion y montaje de estructuras metalicas",
-  "Servicios de soldadura para proyectos industriales",
-  "Soluciones metalurgicas para obras comerciales",
-];
+import { CommercialProcess } from "@/components/public/CommercialProcess";
+import { HeroSection } from "@/components/public/HeroSection";
+import { ProjectHighlights } from "@/components/public/ProjectHighlights";
+import { PublicCta } from "@/components/public/PublicCta";
+import { ServicesOverview } from "@/components/public/ServicesOverview";
+import { siteContent } from "@/lib/site-content";
 
 export default function HomePage() {
   return (
     <>
-      <Section className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-        <div>
-          <PageHeader
-            eyebrow="Construccion, metalurgia y soldadura"
-            title="Soluciones tecnicas para obras y estructuras metalicas"
-            description="Base digital para presentar servicios, captar solicitudes de cotizacion y preparar una operacion comercial ordenada desde el primer contacto."
-          />
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <Link
-              href="/cotizar"
-              className="rounded-md bg-zinc-950 px-5 py-3 text-center text-sm font-semibold text-white"
-            >
-              Solicitar cotizacion
-            </Link>
-            <Link
-              href="/servicios"
-              className="rounded-md border border-zinc-300 px-5 py-3 text-center text-sm font-semibold text-zinc-950"
-            >
-              Ver servicios
-            </Link>
-          </div>
+      <HeroSection />
+      <ServicesOverview />
+      <section className="mx-auto w-full max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
+        <div className="grid gap-4 md:grid-cols-2">
+          {siteContent.benefits.map((benefit) => (
+            <article key={benefit} className="rounded-lg border border-zinc-200 bg-white p-6 shadow-sm">
+              <p className="text-sm font-semibold uppercase tracking-wide text-orange-700">
+                Beneficio comercial
+              </p>
+              <p className="mt-3 text-base leading-7 text-zinc-700">{benefit}</p>
+            </article>
+          ))}
         </div>
-        <div className="rounded-lg border border-zinc-200 bg-white p-6">
-          <h2 className="text-lg font-semibold text-zinc-950">Enfoque comercial</h2>
-          <ul className="mt-5 space-y-4 text-sm leading-6 text-zinc-600">
-            {highlights.map((highlight) => (
-              <li key={highlight} className="border-l-4 border-orange-600 pl-4">
-                {highlight}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </Section>
-      <Section className="grid gap-5 md:grid-cols-3">
-        {["Obras", "Taller", "Ventas"].map((item) => (
-          <article key={item} className="rounded-lg border border-zinc-200 bg-white p-6">
-            <h2 className="text-base font-semibold text-zinc-950">{item}</h2>
-            <p className="mt-3 text-sm leading-6 text-zinc-600">
-              Espacio preparado para contenido comercial, casos y flujos futuros de captacion.
-            </p>
-          </article>
-        ))}
-      </Section>
+      </section>
+      <CommercialProcess />
+      <ProjectHighlights />
+      <PublicCta />
     </>
   );
 }
