@@ -9,6 +9,11 @@ export const metadata: Metadata = {
   },
   description:
     "Plataforma comercial para montaje industrial, estructuras metálicas, soldadura y mantenimiento.",
+  icons: {
+    icon: "/brand/dls_icon.png",
+    shortcut: "/brand/dls_icon.png",
+    apple: "/brand/dls_icon.png",
+  },
 };
 
 export default function RootLayout({

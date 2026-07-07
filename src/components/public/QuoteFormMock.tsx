@@ -8,22 +8,22 @@ import { siteContent } from "@/lib/site-content";
 
 export function QuoteFormMock() {
   return (
-    <Card className="rounded-sm border-[#D6D9DC] bg-white shadow-none">
-      <CardHeader className="border-b border-[#D6D9DC] bg-[#F4F5F7]">
+    <Card className="rounded-sm border-[#D6D9DC] bg-white py-0 shadow-none">
+      <CardHeader className="rounded-t-sm border-b border-[#D6D9DC] bg-[#F4F5F7] py-4">
         <Badge className="w-fit rounded-sm bg-[#C81010] text-white hover:bg-[#9A0D0D]">
-          DSL-QUOTE-REQUEST
+          Solicitud DSL
         </Badge>
         <CardTitle className="text-xl font-semibold text-[#4A4F55]">
           Solicitud técnica de cotización
         </CardTitle>
       </CardHeader>
-      <CardContent>
+      <CardContent className="py-4">
         <form>
           <div
             id="quote-form-status"
-            className="border border-[#E54848] bg-[#F4F5F7] px-4 py-3 text-sm leading-6 text-[#4A4F55]"
+            className="rounded-sm border border-[#E54848] bg-[#F4F5F7] px-4 py-3 text-sm leading-6 text-[#4A4F55]"
           >
-            Formulario visual pendiente de integración con backend.
+            Formulario visual pendiente de integración con el sistema.
           </div>
           <div className="mt-6 grid gap-5 sm:grid-cols-2">
             <label htmlFor="quote-name" className="text-sm font-medium text-[#4A4F55]">
@@ -52,7 +52,7 @@ export function QuoteFormMock() {
               />
             </label>
             <label htmlFor="quote-email" className="text-sm font-medium text-[#4A4F55]">
-              Email
+              Correo electrónico
               <Input
                 id="quote-email"
                 name="email"
@@ -104,7 +104,7 @@ export function QuoteFormMock() {
               <div
                 role="group"
                 aria-labelledby="quote-files-label"
-                className="mt-2 border border-dashed border-[#D6D9DC] bg-[#F4F5F7] px-3 py-6 text-center text-sm text-[#8C9197]"
+                className="mt-2 rounded-sm border border-dashed border-[#D6D9DC] bg-[#F4F5F7] px-3 py-6 text-center text-sm text-[#8C9197]"
               >
                 Carga de archivos pendiente
               </div>

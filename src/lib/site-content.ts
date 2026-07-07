@@ -1,3 +1,20 @@
+type ServiceImage = {
+  src: string;
+  alt: string;
+};
+
+type ServiceContent = {
+  code: string;
+  title: string;
+  image: ServiceImage | null;
+  carouselImages?: string[];
+  description: string;
+  applications: string[];
+};
+
+const servicesImageBaseUrl =
+  "https://gbdoqxdldyszmfzqzmuk.supabase.co/storage/v1/object/public/dls/image/public/services";
+
 export const siteContent = {
   company: {
     name: "MONTAJE DSL",
@@ -21,52 +38,56 @@ export const siteContent = {
   },
   services: [
     {
-      code: "DSL-STRUCT-01",
+      code: "DSL-EST-01",
       title: "Estructuras metálicas",
+      image: null,
+      carouselImages: Array.from(
+        { length: 6 },
+        (_, index) =>
+          `${servicesImageBaseUrl}/estructura_${String(index + 1).padStart(2, "0")}.webp`
+      ),
       description:
         "Fabricación y preparación de estructuras para galpones, plataformas, soportes, marcos y soluciones industriales a medida.",
       applications: ["Galpones", "Plataformas", "Soportes", "Ampliaciones"],
     },
     {
-      code: "DSL-WELD-02",
-      title: "Soldadura industrial",
+      code: "DSL-PIP-02",
+      title: "Piping",
+      image: null,
+      carouselImages: Array.from(
+        { length: 6 },
+        (_, index) => `${servicesImageBaseUrl}/piping_${String(index + 1).padStart(2, "0")}.webp`
+      ),
       description:
-        "Trabajos de soldadura para uniones estructurales, reparaciones, refuerzos y requerimientos operativos en taller o terreno.",
-      applications: ["Uniones", "Refuerzos", "Reparaciones", "Piezas críticas"],
+        "Fabricación, preparación y montaje de líneas, spooles, soportes y componentes de piping para aplicaciones industriales.",
+      applications: ["Spooles", "Líneas", "Soportes", "Montaje"],
     },
     {
-      code: "DSL-MOUNT-03",
-      title: "Montaje estructural",
+      code: "DSL-CAJ-03",
+      title: "Cajones de traspaso",
+      image: null,
       description:
-        "Instalación, armado y ajuste de elementos metálicos para obras industriales, comerciales y ampliaciones productivas.",
-      applications: ["Armado", "Ajuste", "Instalación", "Terreno"],
+        "Desarrollo de cajones, tolvas y elementos de traspaso para manejo de material, continuidad operativa y soluciones a medida.",
+      applications: ["Tolvas", "Traspaso", "Revestimientos", "Ajuste"],
     },
     {
-      code: "DSL-MAINT-04",
-      title: "Mantención y reparación",
+      code: "DSL-ESP-04",
+      title: "Piezas especiales",
+      image: null,
+      carouselImages: Array.from(
+        { length: 6 },
+        (_, index) =>
+          `${servicesImageBaseUrl}/especial_${String(index + 1).padStart(2, "0")}.webp`
+      ),
       description:
-        "Intervenciones correctivas y preventivas para estructuras, componentes metálicos y puntos críticos de operación.",
-      applications: ["Correctivo", "Preventivo", "Refuerzo", "Continuidad"],
+        "Fabricación de componentes especiales, refuerzos, adaptadores y piezas metálicas según planos o requerimientos de terreno.",
+      applications: ["Adaptadores", "Refuerzos", "Componentes", "Planos"],
     },
-    {
-      code: "DSL-WORK-05",
-      title: "Obras menores y soluciones a medida",
-      description:
-        "Ejecución de trabajos específicos de construcción, adaptaciones, refuerzos y mejoras según requerimientos del cliente.",
-      applications: ["Adaptaciones", "Mejoras", "Construcción", "Refuerzos"],
-    },
-    {
-      code: "DSL-TECH-06",
-      title: "Apoyo técnico para proyectos",
-      description:
-        "Acompañamiento para levantar requerimientos, ordenar antecedentes, estimar alcances y preparar información para cotizar.",
-      applications: ["Levantamiento", "Alcance", "Estimación", "Revisión"],
-    },
-  ],
+  ] as ServiceContent[],
   benefits: [
     "Respuesta comercial ordenada para solicitudes de montaje, fabricación y mantenimiento.",
     "Capacidad para integrar estructuras metálicas, soldadura y montaje en un mismo flujo técnico.",
-    "Base preparada para seguimiento de leads, cotizaciones y mensajes sin perder trazabilidad.",
+    "Base preparada para seguimiento de contactos comerciales, cotizaciones y mensajes sin perder trazabilidad.",
     "Comunicación clara para evaluar alcance, prioridad, condiciones de terreno y plazos.",
   ],
   process: [
@@ -97,31 +118,31 @@ export const siteContent = {
   ],
   projects: [
     {
-      code: "DSL-PROJ-118",
+      code: "DSL-PROY-118",
       title: "Estructura metálica para ampliación industrial",
       category: "Fabricación y montaje",
       description:
-        "Proyecto placeholder para levantamiento, fabricación y montaje de una ampliación productiva.",
+        "Referencia inicial para levantamiento, fabricación y montaje de una ampliación productiva.",
       status: "Referencia futura",
       scope: "Levantamiento, fabricación y montaje",
       material: "Acero estructural",
     },
     {
-      code: "DSL-PROJ-204",
+      code: "DSL-PROY-204",
       title: "Mantención de componentes industriales",
       category: "Mantención y reparación",
       description:
-        "Proyecto placeholder para reparación, refuerzo y soldadura en componentes de uso operativo.",
+        "Referencia inicial para reparación, refuerzo y soldadura en componentes de uso operativo.",
       status: "Trabajo técnico",
       scope: "Diagnóstico, refuerzo y terminación",
       material: "Componentes metálicos",
     },
     {
-      code: "DSL-PROJ-316",
+      code: "DSL-PROY-316",
       title: "Montaje estructural en zona de carga",
       category: "Obras menores",
       description:
-        "Proyecto placeholder para montaje, ajuste y puesta en servicio de una solución metálica a medida.",
+        "Referencia inicial para montaje, ajuste y puesta en servicio de una solución metálica a medida.",
       status: "Planificación",
       scope: "Montaje, ajuste y puesta en servicio",
       material: "Perfiles y placas",

@@ -28,8 +28,8 @@ export function ProjectHighlights({ showLink = true }: ProjectHighlightsProps) {
       </div>
       <div className="mt-8 grid gap-4 md:grid-cols-3">
         {siteContent.projects.map((project) => (
-          <Card key={project.title} className="rounded-sm border-[#D6D9DC] bg-white shadow-none">
-            <CardHeader className="border-b border-[#D6D9DC] bg-[#F4F5F7]">
+          <Card key={project.title} className="rounded-sm border-[#D6D9DC] bg-white py-0 shadow-none">
+            <CardHeader className="rounded-t-sm border-b border-[#D6D9DC] bg-[#F4F5F7] py-4">
               <div className="flex items-start justify-between gap-4">
                 <Badge className="rounded-sm bg-[#C81010] text-white hover:bg-[#9A0D0D]">
                   {project.code}
@@ -40,7 +40,7 @@ export function ProjectHighlights({ showLink = true }: ProjectHighlightsProps) {
               </div>
               <CardTitle className="text-lg font-semibold text-[#4A4F55]">{project.title}</CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className="py-4">
               <p className="text-sm leading-6 text-[#4A4F55]">{project.description}</p>
               <Separator className="my-4 bg-[#D6D9DC]" />
               <dl className="grid gap-3 text-sm">

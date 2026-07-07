@@ -18,7 +18,7 @@ export function PublicFooter() {
           </p>
           <Separator className="my-5 bg-[#8C9197]" />
           <p className="text-xs font-semibold uppercase tracking-wide text-[#D6D9DC]">
-            DSL-FOOTER-STRUCTURE
+            Estructura comercial DSL
           </p>
         </div>
         <div>
@@ -43,7 +43,7 @@ export function PublicFooter() {
               </Link>
             ))}
             <Link href="/admin" className="text-[#D6D9DC] hover:text-white">
-              Admin
+              Administración
             </Link>
           </nav>
         </div>

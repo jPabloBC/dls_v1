@@ -6,22 +6,22 @@ import { Textarea } from "@/components/ui/textarea";
 
 export function ContactFormMock() {
   return (
-    <Card className="rounded-sm border-[#D6D9DC] bg-white shadow-none">
-      <CardHeader className="border-b border-[#D6D9DC] bg-[#F4F5F7]">
+    <Card className="rounded-sm border-[#D6D9DC] bg-white py-0 shadow-none">
+      <CardHeader className="rounded-t-sm border-b border-[#D6D9DC] bg-[#F4F5F7] py-4">
         <Badge className="w-fit rounded-sm bg-[#C81010] text-white hover:bg-[#9A0D0D]">
-          DSL-CONTACT-CHANNEL
+          Canal de contacto DSL
         </Badge>
         <CardTitle className="text-xl font-semibold text-[#4A4F55]">
           Canal comercial técnico
         </CardTitle>
       </CardHeader>
-      <CardContent>
+      <CardContent className="py-4">
         <form>
           <div
             id="contact-form-status"
-            className="border border-[#E54848] bg-[#F4F5F7] px-4 py-3 text-sm leading-6 text-[#4A4F55]"
+            className="rounded-sm border border-[#E54848] bg-[#F4F5F7] px-4 py-3 text-sm leading-6 text-[#4A4F55]"
           >
-            Formulario visual pendiente de integración con backend.
+            Formulario visual pendiente de integración con el sistema.
           </div>
           <div className="mt-6 grid gap-5">
             <label htmlFor="contact-name" className="text-sm font-medium text-[#4A4F55]">
@@ -34,7 +34,7 @@ export function ContactFormMock() {
               />
             </label>
             <label htmlFor="contact-email" className="text-sm font-medium text-[#4A4F55]">
-              Email
+              Correo electrónico
               <Input
                 id="contact-email"
                 name="email"
@@ -57,7 +57,7 @@ export function ContactFormMock() {
                 name="preferredChannel"
                 className="mt-2 h-10 w-full rounded-sm border border-[#D6D9DC] bg-white px-3 py-2 text-sm text-[#4A4F55]"
               >
-                <option>Email</option>
+                <option>Correo electrónico</option>
                 <option>Teléfono</option>
                 <option>WhatsApp futuro</option>
               </select>

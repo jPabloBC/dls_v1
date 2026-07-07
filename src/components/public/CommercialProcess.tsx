@@ -19,9 +19,9 @@ export function CommercialProcess() {
         </div>
         <div className="mt-9 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {siteContent.process.map((item) => (
-            <article key={item.step} className="border border-[#D6D9DC] bg-[#F4F5F7] p-5">
+            <article key={item.step} className="rounded-sm border border-[#D6D9DC] bg-[#F4F5F7] p-5">
               <Badge className="rounded-sm bg-white text-[#C81010] ring-1 ring-[#D6D9DC] hover:bg-white">
-                STEP-{item.step}
+                Paso {item.step}
               </Badge>
               <h3 className="mt-3 text-lg font-semibold text-[#4A4F55]">{item.title}</h3>
               <p className="mt-3 text-sm leading-6 text-[#4A4F55]">{item.description}</p>

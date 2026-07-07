@@ -41,7 +41,7 @@ export default function HomePage() {
             <Card key={benefit} className="rounded-sm border-[#D6D9DC] bg-white shadow-none">
               <CardContent>
                 <Badge className="rounded-sm bg-[#F4F5F7] text-[#C81010] ring-1 ring-[#D6D9DC] hover:bg-[#F4F5F7]">
-                  DSL-CRITERIA
+                  Criterios DSL
                 </Badge>
                 <p className="mt-4 text-base leading-7 text-[#4A4F55]">{benefit}</p>
               </CardContent>

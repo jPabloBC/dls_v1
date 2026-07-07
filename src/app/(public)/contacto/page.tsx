@@ -28,11 +28,11 @@ export default function ContactPage() {
           title="Conversemos sobre tu proyecto"
           description="Maqueta inicial para consultas comerciales de montaje industrial, soldadura, estructuras metálicas y mantenimiento."
         />
-        <div className="mt-8 border border-[#D6D9DC] bg-white p-6 text-sm leading-6 text-[#4A4F55]">
+        <div className="mt-8 rounded-sm border border-[#D6D9DC] bg-white p-6 text-sm leading-6 text-[#4A4F55]">
           <Badge className="rounded-sm bg-[#C81010] text-white hover:bg-[#9A0D0D]">
-            DSL-CONTACT-DATA
+            Datos de contacto DSL
           </Badge>
-          <p className="mt-4 font-semibold text-[#4A4F55]">Datos placeholder</p>
+          <p className="mt-4 font-semibold text-[#4A4F55]">Datos de referencia</p>
           <p className="mt-3">{siteContent.contact.email}</p>
           <p>{siteContent.contact.phone}</p>
           <p>{siteContent.contact.hours}</p>
@@ -40,7 +40,7 @@ export default function ContactPage() {
           <p className="text-xs font-semibold uppercase tracking-wide text-[#8C9197]">
             Canales preparados
           </p>
-          <p className="mt-2">Formulario, teléfono, email y futura integración WhatsApp.</p>
+          <p className="mt-2">Formulario, teléfono, correo electrónico y futura integración WhatsApp.</p>
         </div>
       </div>
       <ContactFormMock />

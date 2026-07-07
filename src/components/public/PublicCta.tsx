@@ -8,7 +8,7 @@ export function PublicCta() {
         <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
           <div>
             <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-white/80">
-              DSL-COMMERCIAL-NODE
+              Gestión comercial DSL
             </p>
             <h2 className="text-2xl font-semibold sm:text-3xl">{siteContent.cta.quoteTitle}</h2>
             <p className="mt-4 max-w-2xl text-sm leading-6 text-white">
