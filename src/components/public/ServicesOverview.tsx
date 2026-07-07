@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { siteContent } from "@/lib/site-content";
@@ -13,10 +13,14 @@ type ServicesOverviewProps = {
 };
 
 export function ServicesOverview({ showAll = false }: ServicesOverviewProps) {
-  const visibleServices = siteContent.services.filter(
-    (service) => service.title !== "Cajones de traspaso"
+  const visibleServices = useMemo(
+    () => siteContent.services.filter((service) => service.title !== "Cajones de traspaso"),
+    []
   );
-  const services = showAll ? visibleServices : visibleServices.slice(0, 3);
+  const services = useMemo(
+    () => (showAll ? visibleServices : visibleServices.slice(0, 3)),
+    [showAll, visibleServices]
+  );
   const initialSelectedServiceIndex = Math.max(
     0,
     services.findIndex((service) => service.carouselImages?.length)
@@ -30,6 +34,19 @@ export function ServicesOverview({ showAll = false }: ServicesOverviewProps) {
     ? selectedServiceImages[backgroundImageIndex % selectedServiceImages.length]
     : undefined;
   const selectedServiceHasCarousel = selectedServiceImages.length > 1;
+
+  useEffect(() => {
+    if (!showAll) {
+      return;
+    }
+
+    services.forEach((service) => {
+      service.carouselImages?.forEach((src) => {
+        const image = new window.Image();
+        image.src = src;
+      });
+    });
+  }, [services, showAll]);
 
   useEffect(() => {
     if (!showAll || !selectedServiceHasCarousel) {
@@ -130,6 +147,10 @@ export function ServicesOverview({ showAll = false }: ServicesOverviewProps) {
                   <div className="relative aspect-[4/3]">
                     {service.carouselImages?.length ? (
                       <>
+                        <div
+                          className="absolute inset-0 bg-cover bg-center"
+                          style={{ backgroundImage: `url(${service.carouselImages[0]})` }}
+                        />
                         <div
                           className="absolute inset-0 bg-cover bg-center transition-[background-image] duration-700"
                           style={{
